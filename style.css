@@ -664,32 +664,57 @@ footer *{
     width: 100%;
     height: 100%;
 }
+.inicon.html5{
+    background: url("images/inicons/html5.png") no-repeat center 40px;
+    background-size: 80px auto;
+}
+.inicon.css3{
+    background: url("images/inicons/css3.png") no-repeat center 40px;
+    background-size: 80px auto;
+}
+.inicon.javascript{
+    background: url("images/inicons/js.png") no-repeat center 40px;
+    background-size: 80px auto;
+}
+.inicon.xcode{
+    background: url("images/inicons/xcode.png") no-repeat center 40px;
+    background-size: 80px auto;
+}
 
-.inicon.retina{
-    background: url("images/retina.png") no-repeat center 40px;
+.inicon.android{
+    background: url("images/inicons/android.png") no-repeat center 40px;
     background-size: 80px auto;
 }
-.inicon.support{
-    background: url("images/support.png") no-repeat center 40px;
-    background-size: 80px auto;
+.inicon.git{
+    background: url("images/inicons/git.png") no-repeat center 40px;
+    background-size: 75px auto;
 }
-.inicon.speed{
-    background: url("images/speed.png") no-repeat center 40px;
-    background-size: 80px auto;
+.inicon.angular{
+    background: url("images/inicons/angular.png") no-repeat center 35px;
+    background-size: 90px auto;
 }
-.inicon.social{
-    background: url("images/social.png") no-repeat center 40px;
-    background-size: 80px auto;
+.inicon.bootstrap{
+    background: url("images/inicons/bootstrap.png") no-repeat center 35px;
+    background-size: 100px auto;
+}
+.inicon.aws{
+    background: url("images/inicons/aws.png") no-repeat center -5px;
+    background-size: 150px auto;
+}
+.inicon.mysql{
+    background: url("images/inicons/mysql.png") no-repeat center 45px;
+    background-size: 100px auto;
+}
+.inicon.jquery{
+    background: url("images/inicons/jquery.png") no-repeat center 35px;
+    background-size: 90px auto;
+}
+.inicon.learn{
+    background: url("images/inicons/learn2.png") no-repeat center 20px;
+    background-size: 100px auto;
 }
 
-.inicon.shopping{
-    background: url("images/shopping.png") no-repeat center 40px;
-    background-size: 80px auto;
-}
-.inicon.cloud{
-    background: url("images/cloud.png") no-repeat center 40px;
-    background-size: 80px auto;
-}
+
 
 p.lead{
     font-family: 'Arvo' !important;
