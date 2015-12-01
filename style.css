@@ -27,7 +27,6 @@ h6 * {
     font-family: 'Arvo', serif;
     font-weight: 400;
 }
-
 .breadcrumb {
     border-left-color: #3E84C2;
 }
@@ -546,13 +545,13 @@ div.feature-box div.feature-box-icon {
     color: #2D6D7B;
     display: inline-block;
     float: left;
-    height: 45px;
-    line-height: 45px;
-    margin-right: 10px;
+    height: 65px;
+    line-height: 65px;
+    margin-right: 20px;
     position: relative;
     text-align: center;
     top: 0px;
-    width: 45px;
+    width: 65px;
 }
 
 div.feature-box div.feature-box-info {
@@ -756,9 +755,27 @@ footer * {
 }
 
 .inicon.learn {
-    background: url("images/inicons/learn2.png") no-repeat center 25px;
+    background: url("images/inicons/learn.png") no-repeat center 25px;
     background-size: 90px auto;
 }
+
+.inicon.nccu{
+    background: url("images/inicons/nccu.png") no-repeat center 2px;
+    background-size: 60px auto;
+    opacity: 0.9;
+}
+
+.inicon.trendmicro{
+    background: url("images/inicons/trend_micro.png") no-repeat center 6px;
+    background-size: 55px auto;
+    opacity: 0.75;
+}
+
+.inicon.army{
+    background: url("images/inicons/army.png") no-repeat center 3px;
+    background-size: 60px auto;
+}
+
 
 p.lead {
     font-family: 'Arvo' !important;
@@ -954,4 +971,8 @@ p.lead {
 
 .btn {
     box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.2) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+#MIG {
+    margin-left: 15%;
 }
