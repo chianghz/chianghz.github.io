@@ -2,7 +2,6 @@
 * {
     font-family: 'Raleway', serif;
     font-weight: 300;
-
     letter-spacing: 0.4px;
 }
 
@@ -27,6 +26,7 @@ h6 * {
     font-family: 'Arvo', serif;
     font-weight: 400;
 }
+
 .breadcrumb {
     border-left-color: #3E84C2;
 }
@@ -759,23 +759,22 @@ footer * {
     background-size: 90px auto;
 }
 
-.inicon.nccu{
+.inicon.nccu {
     background: url("images/inicons/nccu.png") no-repeat center 2px;
     background-size: 60px auto;
     opacity: 0.9;
 }
 
-.inicon.trendmicro{
+.inicon.trendmicro {
     background: url("images/inicons/trend_micro.png") no-repeat center 6px;
     background-size: 55px auto;
     opacity: 0.75;
 }
 
-.inicon.army{
+.inicon.army {
     background: url("images/inicons/army.png") no-repeat center 3px;
     background-size: 60px auto;
 }
-
 
 p.lead {
     font-family: 'Arvo' !important;
@@ -895,6 +894,7 @@ p.lead {
     color: rgba(52, 118, 135, 0.9);
 }
 
+
 /*
 .portfolio-block {
     position: relative;
@@ -971,56 +971,89 @@ p.lead {
 }
 */
 
-
-.portfolio-item{
-	margin-bottom: 30px;
+.portfolio-item {
+    border: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    background-repeat: no-repeat;
 }
-.portfolio-item .hover-bg{
-	height: 260px;
-	overflow: hidden;
-	position: relative;
+
+#GGWorld .portfolio-item {
+    background-image: url('images/projects/gg-preview.png');
+    background-size: 500px 250px;
+}
+
+#ZOBA .portfolio-item {
+    background-image: url('images/projects/zoba-preview.jpg');
+    opacity: 0.95;
+}
+
+#Clozet .portfolio-item {
+    background-color: #e8eef2;
+}
+#Clozet .portfolio-item img{
+    border-radius: 15px;
+    position:absolute;
+    margin: 18% 32%;
+}
+
+.portfolio-item .hover-bg {
+    height: 250px;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item ~h3,
+.portfolio-item ~h4 {
+    text-align: center;
 }
 
 .hover-bg .hover-text {
-	position: absolute;
-	text-align: center;
-	margin: 0 auto;
-	color: #ffffff;
-	background: rgba(0, 0, 0, 0.66);
-	padding: 25% 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.66);
+    padding: 25% 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
     transition: all 0.5s;
 }
-.hover-bg .hover-text>h4{
-	opacity: 0;
-	-webkit-transform: translateY(100%);
-            transform: translateY(100%);
-            transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>h4{
-	opacity: 1;
-    -webkit-backface-visibility:hidden;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-}
-.hover-bg .hover-text>i{
-	opacity: 0;
-	-webkit-transform: translateY(0);
-            transform: translateY(0);
-            transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>i{
-	opacity: 1;
-    -webkit-backface-visibility:hidden;
-   -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-}
-.hover-bg:hover .hover-text{
-	opacity: 1;
+
+.hover-bg .hover-text>h4 {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    transition: all 0.3s;
 }
 
+.hover-bg:hover .hover-text>h4 {
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.hover-bg .hover-text>i {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    transition: all 0.3s;
+}
+
+.hover-bg:hover .hover-text>i {
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.hover-bg:hover .hover-text {
+    opacity: 1;
+}
 
 .btn {
     box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.2) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.2) !important;
