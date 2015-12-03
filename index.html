@@ -18,6 +18,8 @@
     <link href="css/icons/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -288,7 +290,6 @@
             </div>
         </div>
 
-
         <div class="clr"></div>
         <div class="container">
             <div class="row">
@@ -296,7 +297,7 @@
                 <div id="GGWorld" class="col-md-4">
                     <div class="portfolio-item">
                         <div class="hover-bg">
-                            <a href="#">
+                            <a href="" data-toggle="modal" data-target="#ggModal">
                                 <div class="hover-text">
                                     <h4>雞雞世界</h4>
                                     <small>WEB</small>
@@ -306,8 +307,10 @@
                             </a>
                         </div>
                     </div>
-                    <br><h4>2012 | Website</h4>
-                    <h3>Camera library</h3><br>
+                    <br>
+                    <h4>2012 | Website</h4>
+                    <h3>Camera library</h3>
+                    <br>
                 </div>
 
                 <div id="Clozet" class="col-md-4">
@@ -324,8 +327,10 @@
                             </a>
                         </div>
                     </div>
-                    <br><h4>2013 | iOS</h4>
-                    <h3>Interactive closet</h3><br>
+                    <br>
+                    <h4>2013 | iOS</h4>
+                    <h3>Interactive closet</h3>
+                    <br>
                 </div>
 
                 <div id="ZOBA" class="col-md-4">
@@ -341,8 +346,10 @@
                             </a>
                         </div>
                     </div>
-                    <br><h4>2014 | iOS</h4>
-                    <h3>Meet-Up app</h3><br>
+                    <br>
+                    <h4>2014 | iOS</h4>
+                    <h3>Meet-Up app</h3>
+                    <br>
                 </div>
 
             </div>
@@ -718,13 +725,55 @@
         </div>
     </footer>
 
+
+    <!-- Modal -->
+    <div id="ggModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div id="ggCarousel" class="modal-body owl-carousel owl-theme">
+                    <div class="item"><img src="images/logo-1.png" alt=""></div>
+                    <div class="item"><img src="images/logo-2.png" alt=""></div>
+                    <div class="item"><img src="images/logo-3.png" alt=""></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
     <!-- Bootstrap core JavaScript
 ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
 
     <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#ggCarousel").owlCarousel({
+                navigation: true,
+                navigationText: [
+      "<i class='fa fa-chevron-left'></i>",
+      "<i class='fa fa-chevron-right'></i>"
+      ],
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true
+            });
+
+        });
+
         $(function () {
             if ($(window).width() > 960) {
                 var tw = $('.triangles').width() / 7 + 32;
@@ -762,5 +811,7 @@
         });
     </script>
 </body>
+
+
 
 </html>
