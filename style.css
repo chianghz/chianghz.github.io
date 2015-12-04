@@ -895,81 +895,7 @@ p.lead {
 }
 
 
-/*
-.portfolio-block {
-    position: relative;
-    margin-bottom: 30px;
-    border-radius: 3px;
-}
-
-.portfolio-block .portfolio-caption {
-    position: absolute;
-    z-index: 99;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    color: #ffffff;
-    top: 0;
-    border: 20px solid rgba(255, 255, 255, 0.3);
-    opacity: 0;
-}
-
-.portfolio-block .portfolio-caption h3 {
-    font-size: 15pt;
-    margin-top: 30px;
-    -webkit-animation-name: zoomOut;
-    animation-name: zoomOut;
-}
-
-.portfolio-block .portfolio-caption .btn-sm {
-    padding-top: 11px;
-}
-
-.portfolio-block {
-    overflow: hidden;
-}
-
-.portfolio-block .portfolio-caption {
-    -webkit-animation-name: fadeOutDown;
-    animation-name: fadeOutDown;
-}
-
-.portfolio-block .portfolio-caption .btn-skype {
-    -webkit-animation-name: fadeOutLeft;
-    animation-name: fadeOutLeft;
-}
-
-.portfolio-block .portfolio-caption .btn-stack-overflow {
-    -webkit-animation-name: fadeOurRight;
-    animation-name: fadeOurRight;
-}
-
-.portfolio-block:hover .portfolio-caption {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-}
-
-.portfolio-block:hover .portfolio-caption h3.animated {
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn;
-    -webkit-animation-delay: 200ms;
-    animation-delay: 200ms;
-}
-
-.portfolio-block:hover .portfolio-caption .btn-skype {
-    -webkit-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
-    -webkit-animation-delay: 200ms;
-    animation-delay: 200ms;
-}
-
-.portfolio-block:hover .portfolio-caption .btn-stack-overflow {
-    -webkit-animation-name: fadeInRight;
-    animation-name: fadeInRight;
-    -webkit-animation-delay: 200ms;
-    animation-delay: 200ms;
-}
-*/
+/*  portfolio  */
 
 .portfolio-item {
     border: 1px;
@@ -991,10 +917,19 @@ p.lead {
 #Clozet .portfolio-item {
     background-color: #e8eef2;
 }
-#Clozet .portfolio-item img{
+
+#Clozet .portfolio-item img {
     border-radius: 15px;
-    position:absolute;
+    position: absolute;
     margin: 18% 32%;
+}
+
+#demo {
+    position: absolute;
+    width: 40%;
+    left: 25%;
+    bottom: 60%;
+
 }
 
 .portfolio-item .hover-bg {
@@ -1067,4 +1002,40 @@ p.lead {
     font-size: 20px;
     font-style: italic;
     color: darkgray;
+}
+
+
+/*   modal   */
+
+.modal-dialog {
+    width: 80vw;
+}
+
+.modal-body {
+    text-align: center;
+    height: 80%;
+}
+
+.item img {
+    position: relative;
+    height: 90%;
+    width: 90%;
+}
+
+
+/* navigation buttons adjust in modal-carousel */
+
+.owl-theme .owl-controls .owl-buttons div {
+    position: absolute;
+    color: darkgray !important;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+    left: -2%;
+    top: 40%;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next {
+    right: -2%;
+    top: 40%;
 }
