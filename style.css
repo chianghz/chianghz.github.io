@@ -889,3 +889,12 @@ p.lead {
     right: -2%;
     top: 40%;
 }
+
+@media screen and (max-width: 768px){
+    .triangles{
+        display: none;
+    }
+    .triangles ~p{
+        font-size: 18px;
+    }
+}
