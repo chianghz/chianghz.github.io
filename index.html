@@ -130,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                    <p class="text-center">↑↑↑ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And these are me ! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↑↑↑</p>
+                <p class="text-center">↑↑↑ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And these are me ! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↑↑↑</p>
             </div>
         </div>
     </div>
@@ -405,7 +405,7 @@
                     <div class="col-md-5">
                         <nav id="footer-menu">
                             <ul class="footer-social">
-                               <li><a href="mailto:kevinchiang.hz@gmail.com"><i class="fa fa-at"></i></a></li>
+                                <li><a href="mailto:kevinchiang.hz@gmail.com"><i class="fa fa-at"></i></a></li>
                                 <li><a href="https://www.facebook.com/kevinchiang.hz" target="_blank"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="http://www.instagram.com/forcus_studio/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             </ul>
@@ -430,10 +430,10 @@
                 </div>
                 <div class="modal-body">
                     <div id="ggCarousel" class="owl-carousel owl-theme">
-                        <div class="item"><img src="images/projects/gg4.png" alt=""></div>
+                        <div class="item"><img src="images/projects/ggcover.gif" alt=""></div>
                         <div class="item"><img src="images/projects/gg1.png" alt=""></div>
-                        <div class="item"><img src="images/projects/gg2.png" alt=""></div>
-                        <div class="item"><img src="images/projects/gg3.png" alt=""></div>
+                        <div class="item"><img src="images/projects/ggblack.gif" alt=""></div>
+                        <div class="item"><img src="images/projects/ggred.gif" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -507,6 +507,9 @@
 
         });
 
+        $('.modal').on('shown.bs.modal', function () {
+            jQuery(this).find('.owl-carousel.owl-theme').trigger('owl.jumpTo', 0);
+        });
 
         $('#clozetModal').on('hidden.bs.modal', function () {
             $("#player").attr("src", $("#player").attr("src"));
