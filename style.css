@@ -908,4 +908,7 @@ p.lead {
     #table {
         display: block;
     }
+    .navbar-brand{
+        margin-left: -95px !important;
+    }
 }
