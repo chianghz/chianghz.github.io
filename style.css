@@ -902,8 +902,8 @@ p.lead {
     .triangles {
         display: none;
     }
-    .triangles ~p {
-        font-size: 18px;
+    .triangles ~.row p{
+        font-size: 13px;
     }
     #table {
         display: block;
