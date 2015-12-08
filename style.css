@@ -904,7 +904,6 @@ p.lead {
     }
     .triangles ~.row p{
         font-size: 18px;
-        font-weight: 500;
     }
     #table {
         display: block;
