@@ -911,4 +911,8 @@ p.lead {
     .navbar-brand{
         margin-left: -95px !important;
     }
+    .modal-dialog{
+        width:95vw;
+        margin-top: 25vh;
+    }
 }
