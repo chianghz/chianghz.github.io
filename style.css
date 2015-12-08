@@ -216,7 +216,6 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .jumbotron {
-
     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(images/main_banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -313,7 +312,8 @@ section.education {
     padding: 30px 0 50px 0;
 }
 
-#Edu-quote,#Exp-quote{
+#Edu-quote,
+#Exp-quote {
     color: black !important;
     font-size: 21px;
 }
@@ -529,11 +529,6 @@ footer * {
     outline: none !important;
 }
 
-.latin-cross {
-    position: absolute;
-    margin: -27% 42% !important;
-    font-size: 50px !important;
-}
 
 .hexicon {
     background: url("images/hex.png");
@@ -778,7 +773,6 @@ p.lead {
     width: 40%;
     left: 25%;
     bottom: 60%;
-
 }
 
 .portfolio-item .hover-bg {
@@ -839,6 +833,19 @@ p.lead {
     opacity: 1;
 }
 
+#table {
+    display: none;
+    width: 360px;
+    margin: 10px auto;
+}
+
+#table .row * p{
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.8);;
+    text-align: center;
+    border-radius: 13px;
+}
 
 #MIG {
     margin-left: 15%;
@@ -850,10 +857,11 @@ p.lead {
     color: dimgray;
 }
 
-#Edu-content *{
+#Edu-content * {
     text-align: center;
     color: white;
 }
+
 
 /*   modal   */
 
@@ -890,11 +898,14 @@ p.lead {
     top: 40%;
 }
 
-@media screen and (max-width: 768px){
-    .triangles{
+@media screen and (max-width: 768px) {
+    .triangles {
         display: none;
     }
-    .triangles ~p{
+    .triangles ~p {
         font-size: 18px;
+    }
+    #table {
+        display: block;
     }
 }
