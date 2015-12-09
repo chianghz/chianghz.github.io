@@ -551,7 +551,6 @@ footer * {
     outline: none !important;
 }
 
-
 .hexicon {
     background: url("images/hex.png");
     width: 132px;
@@ -778,9 +777,8 @@ p.lead {
 
 #ZOBA .portfolio-item {
     background-image: url('images/projects/zoba-preview.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    opacity: 0.95;
 }
 
 #Clozet .portfolio-item {
@@ -797,7 +795,6 @@ p.lead {
     background-image: url('images/projects/bubble-preview.png');
     background-size: contain;
     background-position: center;
-    opacity: 0.95;
 }
 
 #demo {
@@ -805,6 +802,16 @@ p.lead {
     width: 40%;
     left: 25%;
     bottom: 60%;
+}
+
+.filter {
+    background-color: white;
+    height: 250px;
+    width: 95%;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0.2;
+    border-radius: 10px;
 }
 
 .portfolio-item .hover-bg {
@@ -871,10 +878,11 @@ p.lead {
     margin: 10px auto;
 }
 
-#table .row * p{
+#table .row * p {
     font-weight: 500;
     font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.8);;
+    background-color: rgba(0, 0, 0, 0.8);
+    ;
     text-align: center;
     border-radius: 13px;
 }
@@ -912,9 +920,10 @@ p.lead {
     width: 90%;
 }
 
+
 /*   bubble modal   */
 
-#bubbleModal .modal-dialog{
+#bubbleModal .modal-dialog {
     width: 50vw;
 }
 
@@ -940,17 +949,17 @@ p.lead {
     .triangles {
         display: none;
     }
-    .triangles ~.row p{
+    .triangles ~.row p {
         font-size: 16px;
     }
     #table {
         display: block;
     }
-    .navbar-brand{
+    .navbar-brand {
         margin-left: -95px !important;
     }
-    .modal-dialog{
-        width:95vw;
+    .modal-dialog {
+        width: 95vw;
         margin-top: 15vh;
     }
 }
