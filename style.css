@@ -782,26 +782,17 @@ p.lead {
 }
 
 #Clozet .portfolio-item {
+    background-image: url(images/projects/Clozeticon.png);
     background-color: #e8eef2;
+    background-size: cover;
+    background-position: center;
 }
 
-#Clozet .portfolio-item img {
-    border-radius: 15px;
-    position: absolute;
-    margin: 18% 32%;
-}
 
 #Bubble .portfolio-item {
     background-image: url('images/projects/bubble-preview.png');
     background-size: contain;
     background-position: center;
-}
-
-#demo {
-    position: absolute;
-    width: 40%;
-    left: 25%;
-    bottom: 60%;
 }
 
 .filter {
