@@ -750,11 +750,14 @@ p.lead {
 
 #GGWorld .portfolio-item {
     background-image: url('images/projects/gg-preview.png');
-    background-size: 500px 250px;
+    background-size: contain;
+    background-position: center;
 }
 
 #ZOBA .portfolio-item {
     background-image: url('images/projects/zoba-preview.jpg');
+    background-size: contain;
+    background-position: center;
     opacity: 0.95;
 }
 
@@ -766,6 +769,13 @@ p.lead {
     border-radius: 15px;
     position: absolute;
     margin: 18% 32%;
+}
+
+#Bubble .portfolio-item {
+    background-image: url('images/projects/bubble-preview.png');
+    background-size: contain;
+    background-position: center;
+    opacity: 0.95;
 }
 
 #demo {
@@ -878,6 +888,12 @@ p.lead {
     position: relative;
     height: 90%;
     width: 90%;
+}
+
+/*   bubble modal   */
+
+#bubbleModal .modal-dialog{
+    width: 50vw;
 }
 
 
